@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+:root {
+  --primary-white: #fff;
+  --primary-grey: #ccd1d9;
+  --primary-dark-grey: #666666;
+  --primary-dark: rgba(255, 255, 255, 0);
+  --primary-red: #ef4035;
+  --primary-black: #000000;
+
+  --primary-navbar: #bfb595;
+  /* --primary-background: #f5f5dc; */
+  --primary-background: #EFE2BA;
+}
+
+html, body, #root, .app {
+  height: 100%;
+  width: 100%;
+  background: var(--primary-background);
+  /* background-image: url("../public/assets/background.jpg"); */
+
+  font-family: 'Nunito', sans-serif !important;
+}
+
+.card {
+  font-size: 3rem;
+  color: #fff !important;
+  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+  border-radius: 4px;
+  transition: all 500ms;
+  overflow: hidden;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card:hover {
+  box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+  transform: translateY(-1px) scale(1.06);
+}
+
+.about-us-container {
+  height: 97%;
+  width: 100%;
+  background-image: url("../public/assets/about_us_background.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+/************** NAVBAR *****************/
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--primary-navbar);
+  position: sticky;
+  top: 0;
+}
+
+#navbar li {
+  float: left;
+}
+
+#navbar li a {
+  display: block;
+  color: white !important;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navbar li a:hover {
+  background-color: #111;
+}
+
+@media (max-width: 600px) {
+  .nav-non-mobile {
+    display: none;
+  }
+}
+
+
+
+
